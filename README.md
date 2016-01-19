@@ -11,7 +11,9 @@ Sample Input:
 
 https://timestamper-micro.herokuapp.com/December%2015,%202015
 
-https://timestamp-micro.herokuapp.com/1450137600
+https://timestamper-micro.herokuapp.com/1450137600
+
+https://timestamper-micro.herokuapp.com/2015-12-15
 
 Sample Output:
 
