@@ -1,22 +1,17 @@
-
-     ,-----.,--.                  ,--. ,---.   ,--.,------.  ,------.
-    '  .--./|  | ,---. ,--.,--. ,-|  || o   \  |  ||  .-.  \ |  .---'
-    |  |    |  || .-. ||  ||  |' .-. |`..'  |  |  ||  |  \  :|  `--, 
-    '  '--'\|  |' '-' ''  ''  '\ `-' | .'  /   |  ||  '--'  /|  `---.
-     `-----'`--' `---'  `----'  `---'  `--'    `--'`-------' `------'
-    ----------------------------------------------------------------- 
+**Timestamp Microservice**
 
 
-Welcome to your Node.js project on Cloud9 IDE!
+Uses:
+* You can pass a string as a parameter, and it will check to see whether that string contains either a unix timestamp,
+a natural language date (example: January 1, 2016), or a date in YYYY-MM-DD format (like 2016-01-18).
+* If it does, it returns both the Unix timestamp and the natural language form of that date.
+* If it does not contain a date or Unix timestamp, it returns null for those properties.
 
-This chat example showcases how to use `socket.io` with a static `express` server.
+Sample Input:
 
-## Running the server
+https://timestamper-micro.herokuapp.com/December%2015,%202015
+https://timestamp-micro.herokuapp.com/1450137600
 
-1) Open `server.js` and start the app by clicking on the "Run" button in the top menu.
+Sample Output:
 
-2) Alternatively you can launch the app from the Terminal:
-
-    $ node server.js
-
-Once the server is running, open the project in the shape of 'https://projectname-username.c9.io/'. As you enter your name, watch the Users list (on the left) update. Once you press Enter or Send, the message is shared with all connected clients.
+{ "unix": 1450137600, "natural": "December 15, 2015" }
