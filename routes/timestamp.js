@@ -4,7 +4,7 @@ module.exports = function(app){
         var isUnix = false;
         var isNatLang = false;
         var isDashedNumber = false;
-        var dateRegex1 = /(January|February|March|April|May|June?|July|August|September|October|November|December)\s(\d\d?)(th|,\s)(\d\d\d\d)/;
+        var dateRegex1 = /(January|February|March|April|May|June|July|August|September|October|November|December)\s(\d\d?)(th|,\s)(\d\d\d\d)/;
         var dateRegex2 = /(\d\d\d\d)-(\d\d)-(\d\d)/;
         var timestampQuery = req.params.timestamp;
         if(timestampQuery == parseInt(timestampQuery, 10)){
