@@ -10,6 +10,7 @@ a natural language date (example: January 1, 2016), or a date in YYYY-MM-DD form
 Sample Input:
 
 https://timestamper-micro.herokuapp.com/December%2015,%202015
+
 https://timestamp-micro.herokuapp.com/1450137600
 
 Sample Output:
